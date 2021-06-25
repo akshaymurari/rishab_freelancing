@@ -1,9 +1,14 @@
 import React from 'react';
+import CustomerSignin from './CustomerAuth/CustomerSignin';
+import DeliveryBoyLogin from './DeliveryBoyLogin/DeliveryBoyLogin';
+import FarmerSignin from './FarmerAuth/FarmerSignin';
+
+
 function App() {
   return (
-    <div className="App">
-      <h1>hello</h1>
-    </div>
+      <div className="App">
+          <DeliveryBoyLogin></DeliveryBoyLogin>
+      </div>
   );
 }
 
