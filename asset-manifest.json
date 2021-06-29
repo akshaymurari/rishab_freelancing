@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/rishab_freelancing/static/css/main.4f2e4289.chunk.css",
-    "main.js": "/rishab_freelancing/static/js/main.ace78805.chunk.js",
-    "main.js.map": "/rishab_freelancing/static/js/main.ace78805.chunk.js.map",
+    "main.js": "/rishab_freelancing/static/js/main.55d5ae43.chunk.js",
+    "main.js.map": "/rishab_freelancing/static/js/main.55d5ae43.chunk.js.map",
     "runtime-main.js": "/rishab_freelancing/static/js/runtime-main.fe9b989a.js",
     "runtime-main.js.map": "/rishab_freelancing/static/js/runtime-main.fe9b989a.js.map",
     "static/js/2.73b4474b.chunk.js": "/rishab_freelancing/static/js/2.73b4474b.chunk.js",
@@ -21,6 +21,6 @@
     "static/js/runtime-main.fe9b989a.js",
     "static/js/2.73b4474b.chunk.js",
     "static/css/main.4f2e4289.chunk.css",
-    "static/js/main.ace78805.chunk.js"
+    "static/js/main.55d5ae43.chunk.js"
   ]
 }
