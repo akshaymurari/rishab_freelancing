@@ -61,7 +61,7 @@ db.pendings.belongsTo(db.farmers);
 db.pendings.belongsTo(db.deliveryBoys);
 
 sequelize
-    .sync({ force:true})
+    .sync({ force:false})
     .then(() => {
         console.log("Tables Synced!");
     })
