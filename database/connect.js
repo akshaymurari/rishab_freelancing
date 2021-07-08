@@ -1,17 +1,17 @@
 const { Sequelize, DataTypes } = require("sequelize");
 
 const sequelize = new Sequelize(
-    "rishab",
+    "YwO9Nx6aoM",
     process.env.DB_USERNAME,
     process.env.DB_PASS,
     {
         host: process.env.DB_HOST,
         dialect: "mysql",
-        dialectOptions: {
-            ssl: {
-                require: true,
-            },
-        },
+        // dialectOptions: {
+        //     ssl: {
+        //         require: true,
+        //     },
+        // },
     }
 );
 
@@ -60,10 +60,8 @@ db.pendings.belongsTo(db.farmers);
 
 db.pendings.belongsTo(db.deliveryBoys);
 
-
-
 sequelize
-    .sync({ force:false})
+    .sync({ force:true})
     .then(() => {
         console.log("Tables Synced!");
     })
@@ -72,3 +70,4 @@ sequelize
     });
 
 module.exports = db;
+
