@@ -1,7 +1,7 @@
 const { Sequelize, DataTypes } = require("sequelize");
 
 const sequelize = new Sequelize(
-    "YwO9Nx6aoM",
+    "bwubcratyjbdcrpawv9l",
     process.env.DB_USERNAME,
     process.env.DB_PASS,
     {
