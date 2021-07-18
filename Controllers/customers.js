@@ -6,12 +6,12 @@ const buyproduct = async (req,res) => {
     try{
         const data = req.body;
         if(customerauth(data.email,data.password)){
-            const result1 = await db.orders.findAll({
-                where:{
-                    farmerproductId:data.id,
-                }
-            });
-            if(result1.length==0){
+            // const result1 = await db.orders.findAll({
+            //     where:{
+            //         farmerproductId:data.id,
+            //     }
+            // });
+            // if(result1.length==0){
                 const result = await db.orders.create({
                     UserEmail:data.email,
                     farmerproductId:data.id,
@@ -19,9 +19,7 @@ const buyproduct = async (req,res) => {
                 });
                 console.log(result);
                 return res.status(200).send("product added")
-            }else{
-                return res.status(400).send("already booked")
-            }
+            // }
         }else{
             return res.status(400).send("invalid user")
         }
