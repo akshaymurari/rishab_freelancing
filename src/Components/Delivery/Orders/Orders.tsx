@@ -105,6 +105,7 @@ const Orders = () => {
               <div className="" style={{display:"flex",flexDirection:"row",flexWrap:"wrap",justifyContent:"space-around"}}>
                 {
                    orders.map((ele:any)=>(
+                     (ele.farmerproduct !=null )?(
                     <Card className="" style={{width:"300px"}}>
                       <CardActionArea>
                         <CardContent>
@@ -153,6 +154,7 @@ const Orders = () => {
                         </Button>
                       </CardActions>
                     </Card>
+                     ):""
                    ))
                  } 
               </div>

@@ -78,64 +78,66 @@ const PendingOrders = () => {
             {products.length !== 0 && products !== undefined ? (
                 <div className="pendingOrdersProducts">
                     {products.map((product) => (
-                        <Card className={classes.root}>
-                            <CardActionArea>
-                                <CardMedia
-                                    className={classes.media}
-                                    image={product.farmerproduct.productpic}
-                                    title="Contemplative Reptile"
-                                />
-                                <CardContent>
-                                    <Typography
-                                        gutterBottom
-                                        variant="h5"
-                                        component="h2"
-                                    >
-                                        {product.farmerproduct.productname}
-                                    </Typography>
-                                    <Typography
-                                        gutterBottom
-                                        variant="h5"
-                                        component="h2"
-                                    >
-                                        ₹{product.farmerproduct.cost}
-                                    </Typography>
-                                    <Typography
-                                        variant="body2"
-                                        color="textSecondary"
-                                        component="p"
-                                    >
-                                        Only {product.farmerproduct.quantity} Left!
-                                    </Typography>
-                                    <Typography
-                                        variant="body2"
-                                        color="textSecondary"
-                                        component="p"
-                                    >
-                                        Phone no: {product.farmerproduct.phone}
-                                    </Typography>
-                                    <Typography
-                                        variant="body2"
-                                        color="textSecondary"
-                                        component="p"
-                                    >
-                                        Location: {product.farmerproduct.location}
-                                    </Typography>
-                                </CardContent>
-                            </CardActionArea>
-                            <Typography
-                                variant="body2"
-                                color="textSecondary"
-                                component="p"
-                                style={{
-                                    margin: "1rem",
-                                    fontWeight: "800",
-                                    color: "green",
-                                }}
-                            >
-                                PENDING.....
-                            </Typography>
-                        </Card>
+                            (product.farmerproduct!==null)?(
+                            <Card className={classes.root}>
+                                <CardActionArea>
+                                    <CardMedia
+                                        className={classes.media}
+                                        image={product.farmerproduct.productpic}
+                                        title="Contemplative Reptile"
+                                    />
+                                    <CardContent>
+                                        <Typography
+                                            gutterBottom
+                                            variant="h5"
+                                            component="h2"
+                                        >
+                                            {product.farmerproduct.productname}
+                                        </Typography>
+                                        <Typography
+                                            gutterBottom
+                                            variant="h5"
+                                            component="h2"
+                                        >
+                                            ₹{product.farmerproduct.cost}
+                                        </Typography>
+                                        <Typography
+                                            variant="body2"
+                                            color="textSecondary"
+                                            component="p"
+                                        >
+                                            Only {product.farmerproduct.quantity} Left!
+                                        </Typography>
+                                        <Typography
+                                            variant="body2"
+                                            color="textSecondary"
+                                            component="p"
+                                        >
+                                            Phone no: {product.farmerproduct.phone}
+                                        </Typography>
+                                        <Typography
+                                            variant="body2"
+                                            color="textSecondary"
+                                            component="p"
+                                        >
+                                            Location: {product.farmerproduct.location}
+                                        </Typography>
+                                    </CardContent>
+                                </CardActionArea>
+                                <Typography
+                                    variant="body2"
+                                    color="textSecondary"
+                                    component="p"
+                                    style={{
+                                        margin: "1rem",
+                                        fontWeight: "800",
+                                        color: "green",
+                                    }}
+                                >
+                                    PENDING.....
+                                </Typography>
+                            </Card>)
+                            :""
                     ))}
                 </div>
             ) : (
